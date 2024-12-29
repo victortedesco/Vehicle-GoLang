@@ -1,0 +1,35 @@
+### Get All Vehicles
+GET http://localhost:8080/vehicle
+Content-Type: application/json
+
+### Get Vehicle By ID
+GET http://localhost:8080/vehicle/d93568c1-bf9b-47c4-88ab-0273a3f21f6f
+Content-Type: application/json
+
+### Delete Vehicle
+DELETE http://localhost:8080/vehicle/d93568c1-bf9b-47c4-88ab-0273a3f21f6f
+Content-Type: application/json
+
+### Add Vehicle
+POST http://localhost:8080/vehicle
+Content-Type: application/json
+
+{
+    "name": "Chevrolet Camaro 2020",
+    "brand": "Chevrolet",
+    "price": 99999.99,
+    "mileage": 55000,
+    "year": 2020
+}
+
+### Update Vehicle
+PUT http://localhost:8080/vehicle/d93568c1-bf9b-47c4-88ab-0273a3f21f6f
+Content-Type: application/json
+
+{
+    "name": "Toyota Corolla 2020",
+    "brand": "Corolla",
+    "price": 45999.99,
+    "mileage": 45000,
+    "year": 2020
+}
